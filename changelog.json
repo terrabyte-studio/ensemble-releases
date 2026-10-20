@@ -1,0 +1,418 @@
+{
+  "versions": [
+    {
+      "version": "0.2.10-beta.4",
+      "date": "2026-10-20",
+      "beta": true,
+      "changes": [
+        {
+          "id": "sidebar-who-acts-next",
+          "kind": "new",
+          "title": "The sidebar groups threads by who acts next",
+          "body": "Needs you, Ready to merge, Working and Done, with every thread under the right heading. Settings › Labs turns the headings off."
+        },
+        {
+          "id": "whats-new",
+          "kind": "new",
+          "title": "See what's new in every version",
+          "body": "In Settings › What's new and on tryensemble.co/changelog; the update popup lists what an update brings."
+        },
+        {
+          "id": "git-settings",
+          "kind": "new",
+          "title": "Git & GitHub settings",
+          "body": "A page of its own in Settings, with how much of GitHub's hourly limit is left."
+        },
+        {
+          "id": "start-from-work",
+          "kind": "new",
+          "title": "Start a thread from another thread's work or a branch",
+          "body": "The new-thread form says where a thread starts, and lists threads' work and branches the default branch doesn't have yet."
+        },
+        {
+          "id": "composer-when-nothing-open",
+          "kind": "new",
+          "title": "Start a thread right away when none is open",
+          "body": "With no thread open, the window shows a new thread's message box."
+        },
+        {
+          "id": "pr-on-github",
+          "kind": "new",
+          "title": "Open a pull request on GitHub with ⌘-click",
+          "body": "Or a middle click on its button in the status bar (Ctrl-click on Linux and Windows). A pull request GitHub refuses says which field was wrong."
+        },
+        {
+          "id": "agent-fixes-services",
+          "kind": "improved",
+          "title": "An agent can fix a service that fails to start",
+          "body": "When a service in the Running tab exits with an error, send its output to the agent: it fixes the cause, adds what was missing to the project's setup and starts the service again."
+        },
+        {
+          "id": "archive-on-merge",
+          "kind": "improved",
+          "title": "A thread archives itself once its pull request merges",
+          "body": "Keep it instead with Settings › Labs › Keep a thread after its PR merges. The chat says Merged once, not twice."
+        },
+        {
+          "id": "agents-ask-when-blocked",
+          "kind": "improved",
+          "title": "Agents ask only when they need you",
+          "body": "They no longer stop to ask whether to open a pull request, and when they do need you to choose, the thread shows it's waiting on you."
+        },
+        {
+          "id": "no-next-steps",
+          "kind": "improved",
+          "title": "A quieter message box",
+          "body": "The agent's suggested next steps above it are gone; what it shows you stays in its reply."
+        },
+        {
+          "id": "faster-after-updates",
+          "kind": "improved",
+          "title": "Faster starts after an update",
+          "body": "The app keeps what it read from your machines across updates, and shows one sync screen while they catch up instead of the sidebar flickering through old states."
+        },
+        {
+          "id": "smaller-hover-card",
+          "kind": "improved",
+          "title": "A smaller thread card on hover",
+          "body": "Title, branch, what it's about, its changes, agent, machine and time, shown as soon as you point at a thread."
+        },
+        {
+          "id": "unread-across-restarts",
+          "kind": "improved",
+          "title": "Unread threads stay unread after a restart",
+          "body": "And threads that finished while the app was closed come back marked."
+        },
+        {
+          "id": "cleaner-diagrams",
+          "kind": "improved",
+          "title": "Cleaner diagrams, and a lighter app",
+          "body": "Diagrams in replies are drawn with straight lines in the app's own colours, in both themes, and every kind fits its frame. The app itself got smaller."
+        },
+        {
+          "id": "git-button-icons",
+          "kind": "improved",
+          "title": "Git's buttons have icons",
+          "body": "Create PR, Push, Merge, Continue, Reopen and Archive carry an icon, and the quiet ones take the status bar's colour."
+        },
+        {
+          "id": "login-items-icon",
+          "kind": "improved",
+          "title": "Ensemble's own icon in Login Items",
+          "body": "On a Mac, the helper that keeps your threads running in the background shows the app's icon in System Settings."
+        },
+        {
+          "id": "betas-on-linux-and-windows",
+          "kind": "fixed",
+          "title": "Betas too works on Linux and Windows",
+          "body": "Betas were made for Macs only, so the app elsewhere couldn't check for updates on that channel. Every beta now comes for all three."
+        },
+        {
+          "id": "github-hourly-limit",
+          "kind": "fixed",
+          "title": "Pull requests stay current without using up GitHub's hourly limit",
+          "body": "The app asks GitHub only about what changed, and keeps some of the limit for what you do yourself."
+        },
+        {
+          "id": "threads-start-from-latest",
+          "kind": "fixed",
+          "title": "New threads start from the latest default branch",
+          "body": "A folder project that was behind GitHub started threads from an old copy of it."
+        },
+        {
+          "id": "this-mac-starts",
+          "kind": "fixed",
+          "title": "This Mac's machine starts every time",
+          "body": "On some Macs its background helper was loaded but never started, and the app only said \"connection closed\"."
+        },
+        {
+          "id": "claude-keeps-conversation",
+          "kind": "fixed",
+          "title": "Claude no longer forgets a conversation by mistake",
+          "body": "A reply that only quoted Claude's \"No conversation found\" message made the next turn start afresh."
+        },
+        {
+          "id": "vm-move-keeps-work",
+          "kind": "fixed",
+          "title": "A thread moved to an Ensemble VM always keeps its work",
+          "body": "If a move can't bring the work along, it stops and says why."
+        },
+        {
+          "id": "context-on-newer-claude",
+          "kind": "fixed",
+          "title": "The context meter is right from a chat's first turn",
+          "body": "On newer Claude models a new chat no longer looks fuller than it is before its first reply ends."
+        },
+        {
+          "id": "sidebar-fixes",
+          "kind": "fixed",
+          "title": "The sidebar keeps its order and its folds",
+          "body": "Projects without threads stay listed, and a folded section stays folded with one of its threads open."
+        },
+        {
+          "id": "long-messages-wrap",
+          "kind": "fixed",
+          "title": "Long paths and lists wrap in a sent message",
+          "body": "Instead of running off the chat's left edge."
+        },
+        {
+          "id": "sharp-on-1x",
+          "kind": "fixed",
+          "title": "Sharp lines and screenshots on non-Retina screens",
+          "body": "Thin borders and the lines between a flow's steps no longer vanish on a 1x display, and screenshots show at full sharpness."
+        },
+        {
+          "id": "choose-repositories-link",
+          "kind": "fixed",
+          "title": "Choose repositories opens GitHub again"
+        }
+      ]
+    },
+    {
+      "version": "0.2.9",
+      "date": "2026-10-18",
+      "changes": [
+        {
+          "id": "beta-channel",
+          "kind": "new",
+          "title": "Get new versions early",
+          "body": "Settings › General › Updates: choose Betas too to get each new version before everyone else."
+        },
+        {
+          "id": "opens-after-0.2.8",
+          "kind": "fixed",
+          "title": "The app opens again after updating",
+          "body": "Some conversations made 0.2.8's window break as soon as it opened."
+        }
+      ]
+    },
+    {
+      "version": "0.2.8",
+      "date": "2026-10-18",
+      "changes": [
+        {
+          "id": "crash-on-working",
+          "kind": "fixed",
+          "title": "No more crashes when a thread starts or stops working",
+          "body": "And if the window does break, it offers the update that fixes it."
+        }
+      ]
+    },
+    {
+      "version": "0.2.7",
+      "date": "2026-10-17",
+      "changes": [
+        {
+          "id": "stacked-prs",
+          "kind": "new",
+          "title": "Stacked pull requests",
+          "body": "A thread can build on another's branch; its pull request targets that branch and merges after it. Every step that's yours shows in the inbox and the sidebar."
+        },
+        {
+          "id": "usage-resets",
+          "kind": "new",
+          "title": "See when each usage limit resets",
+          "body": "The usage popover shows each agent's limits, when they reset, and whether you're on pace."
+        },
+        {
+          "id": "login-switches",
+          "kind": "new",
+          "title": "Choose which logins to use, and when to switch",
+          "body": "In Settings › Agents, turn each login on or off, drag them into the order you want, and set how much of a limit to use before moving on."
+        },
+        {
+          "id": "archive-by-asking",
+          "kind": "new",
+          "title": "Ask an agent to archive a thread"
+        },
+        {
+          "id": "turns-survive-updates",
+          "kind": "improved",
+          "title": "Updates never cut a running turn off",
+          "body": "Your machines update quietly in the background, and agents carry on where they were."
+        },
+        {
+          "id": "new-thread-after-adding",
+          "kind": "improved",
+          "title": "Start a thread the moment you add a project"
+        },
+        {
+          "id": "vm-retries",
+          "kind": "improved",
+          "title": "Ensemble VMs try again when a start fails",
+          "body": "Folders with a GitHub remote work there too."
+        }
+      ]
+    },
+    {
+      "version": "0.2.6",
+      "date": "2026-10-16",
+      "changes": [
+        {
+          "id": "pasted-claude-token",
+          "kind": "fixed",
+          "title": "A Claude token pasted from a terminal just works"
+        }
+      ]
+    },
+    {
+      "version": "0.2.5",
+      "date": "2026-10-16",
+      "changes": [
+        {
+          "id": "pages-in-replies",
+          "kind": "new",
+          "title": "Agents answer with pages of data",
+          "body": "Numbers, charts, tables, timelines and flows, drawn right in the reply in the app's own style."
+        },
+        {
+          "id": "thread-chips",
+          "kind": "new",
+          "title": "Agents can point you to another thread",
+          "body": "It shows as a chip you can click to open it."
+        },
+        {
+          "id": "vms-run-folders",
+          "kind": "new",
+          "title": "Ensemble VMs run folder projects"
+        },
+        {
+          "id": "code-blocks",
+          "kind": "improved",
+          "title": "Code blocks with highlighting and a copy button"
+        },
+        {
+          "id": "git-lfs",
+          "kind": "fixed",
+          "title": "Projects that use Git LFS start threads"
+        }
+      ]
+    },
+    {
+      "version": "0.2.4",
+      "date": "2026-10-16",
+      "changes": [
+        {
+          "id": "windows",
+          "kind": "new",
+          "title": "Ensemble for Windows",
+          "body": "Download the installer from the website; threads run in Git for Windows' shell."
+        },
+        {
+          "id": "conflicts-to-agent",
+          "kind": "new",
+          "title": "Merge conflicts go to the agent",
+          "body": "Press Merge on a pull request that conflicts and the agent merges the base in for you to look over, instead of the merge failing."
+        },
+        {
+          "id": "check-for-updates",
+          "kind": "new",
+          "title": "Check for updates from Settings"
+        },
+        {
+          "id": "quiet-top-bar",
+          "kind": "improved",
+          "title": "A quieter top bar",
+          "body": "It shows the machine's icon and short name."
+        },
+        {
+          "id": "unsent-message-mark",
+          "kind": "improved",
+          "title": "The sidebar marks threads with a message you haven't sent",
+          "body": "And gives each title more room."
+        },
+        {
+          "id": "steady-status-bar",
+          "kind": "fixed",
+          "title": "The status bar no longer flickers, or says merged before it is"
+        }
+      ]
+    },
+    {
+      "version": "0.2.3",
+      "date": "2026-10-16",
+      "changes": [
+        {
+          "id": "dictation",
+          "kind": "new",
+          "title": "Dictate your messages",
+          "body": "Speak into the message box on a Mac, with Apple's speech recognition."
+        },
+        {
+          "id": "any-file",
+          "kind": "new",
+          "title": "Attach any file to a message",
+          "body": "Up to 5 MB each."
+        },
+        {
+          "id": "bigger-vm",
+          "kind": "new",
+          "title": "Move a thread to a bigger VM",
+          "body": "From the move menu, or ask the agent when a build needs more room."
+        },
+        {
+          "id": "pr-in-chat",
+          "kind": "new",
+          "title": "The chat says when its pull request is merged, closed or reopened"
+        },
+        {
+          "id": "get-started-repos",
+          "kind": "new",
+          "title": "Get started suggests your projects",
+          "body": "The repositories Claude Code and Codex have worked in are offered as projects."
+        },
+        {
+          "id": "take-over",
+          "kind": "new",
+          "title": "Take over a thread an agent started",
+          "body": "Threads an agent starts report to it and are read-only to you, until you take one over."
+        },
+        {
+          "id": "sidebar-by-need",
+          "kind": "improved",
+          "title": "Threads sorted by what they need from you"
+        },
+        {
+          "id": "checks-first",
+          "kind": "improved",
+          "title": "Checks that need you come first",
+          "body": "Passed ones are folded away."
+        },
+        {
+          "id": "dropped-file-at-caret",
+          "kind": "fixed",
+          "title": "A dropped file goes where your cursor is in the message"
+        }
+      ]
+    },
+    {
+      "version": "0.2.1",
+      "date": "2026-10-16",
+      "changes": [
+        {
+          "id": "update-row",
+          "kind": "new",
+          "title": "See when an update is ready",
+          "body": "Above the sidebar's foot, with a restart button."
+        },
+        {
+          "id": "archive-open-pr",
+          "kind": "improved",
+          "title": "Archiving a thread with an open pull request asks first"
+        }
+      ]
+    },
+    {
+      "version": "0.2.0",
+      "date": "2026-10-15",
+      "changes": [
+        {
+          "id": "first-release",
+          "kind": "new",
+          "title": "Ensemble's first release",
+          "body": "Run Claude Code and Codex threads side by side, each in a machine of its own, on your Mac or your own servers."
+        }
+      ]
+    }
+  ]
+}
