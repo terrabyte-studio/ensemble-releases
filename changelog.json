@@ -41,12 +41,6 @@
           "body": "Or a middle click on its button in the status bar (Ctrl-click on Linux and Windows). A pull request GitHub refuses says which field was wrong."
         },
         {
-          "id": "composer-when-nothing-open",
-          "kind": "new",
-          "title": "Start a thread right away when none is open",
-          "body": "With no thread open, the window shows a new thread's message box."
-        },
-        {
           "id": "new-thread-page",
           "kind": "improved",
           "title": "New thread opens as a page of its own",
@@ -182,12 +176,6 @@
           "id": "choose-repositories-link",
           "kind": "fixed",
           "title": "Choose repositories opens GitHub again"
-        },
-        {
-          "id": "sharp-on-1x",
-          "kind": "fixed",
-          "title": "Sharp lines and screenshots on non-Retina screens",
-          "body": "Thin borders and the lines between a flow's steps no longer vanish on a 1x display, and screenshots show at full sharpness."
         }
       ]
     },
