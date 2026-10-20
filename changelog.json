@@ -1,10 +1,15 @@
 {
   "versions": [
     {
-      "version": "0.2.10-beta.4",
+      "version": "0.2.10",
       "date": "2026-10-20",
-      "beta": true,
       "changes": [
+        {
+          "id": "report-bugs-and-ideas",
+          "kind": "new",
+          "title": "Report a bug or suggest an idea from the app",
+          "body": "From the Help menu, ⌘K, /bug or /feedback in a message box, or the crash screen, with the last 30 minutes of the log if you want it (tokens, emails and paths taken out). Settings › Feedback shows where each report stands."
+        },
         {
           "id": "sidebar-who-acts-next",
           "kind": "new",
@@ -30,16 +35,28 @@
           "body": "The new-thread form says where a thread starts, and lists threads' work and branches the default branch doesn't have yet."
         },
         {
+          "id": "pr-on-github",
+          "kind": "new",
+          "title": "Open a pull request on GitHub with ⌘-click",
+          "body": "Or a middle click on its button in the status bar (Ctrl-click on Linux and Windows). A pull request GitHub refuses says which field was wrong."
+        },
+        {
           "id": "composer-when-nothing-open",
           "kind": "new",
           "title": "Start a thread right away when none is open",
           "body": "With no thread open, the window shows a new thread's message box."
         },
         {
-          "id": "pr-on-github",
-          "kind": "new",
-          "title": "Open a pull request on GitHub with ⌘-click",
-          "body": "Or a middle click on its button in the status bar (Ctrl-click on Linux and Windows). A pull request GitHub refuses says which field was wrong."
+          "id": "new-thread-page",
+          "kind": "improved",
+          "title": "New thread opens as a page of its own",
+          "body": "⌘N, a project's + and ⌘K show it in the window instead of a dialog, with the project's to-dos to start from. With no thread open, the window shows it too."
+        },
+        {
+          "id": "cleaner-light-theme",
+          "kind": "improved",
+          "title": "A cleaner light theme",
+          "body": "Cool greys, a white message box and soft shadows, where the dark theme's shadows used to turn into grey smudges."
         },
         {
           "id": "agent-fixes-services",
@@ -75,7 +92,7 @@
           "id": "smaller-hover-card",
           "kind": "improved",
           "title": "A smaller thread card on hover",
-          "body": "Title, branch, what it's about, its changes, agent, machine and time, shown as soon as you point at a thread."
+          "body": "Title, branch, what it's about, its changes, agent, machine and time, shown as soon as you point at a thread, and switching at once as you move to the next one."
         },
         {
           "id": "unread-across-restarts",
@@ -100,6 +117,12 @@
           "kind": "improved",
           "title": "Ensemble's own icon in Login Items",
           "body": "On a Mac, the helper that keeps your threads running in the background shows the app's icon in System Settings."
+        },
+        {
+          "id": "no-autocorrect",
+          "kind": "fixed",
+          "title": "macOS no longer autocorrects what you type to the agent",
+          "body": "It swapped words as you typed, like \"pr\" for \"project\". Its inline suggestions stay."
         },
         {
           "id": "betas-on-linux-and-windows",
@@ -156,15 +179,15 @@
           "body": "Instead of running off the chat's left edge."
         },
         {
+          "id": "choose-repositories-link",
+          "kind": "fixed",
+          "title": "Choose repositories opens GitHub again"
+        },
+        {
           "id": "sharp-on-1x",
           "kind": "fixed",
           "title": "Sharp lines and screenshots on non-Retina screens",
           "body": "Thin borders and the lines between a flow's steps no longer vanish on a 1x display, and screenshots show at full sharpness."
-        },
-        {
-          "id": "choose-repositories-link",
-          "kind": "fixed",
-          "title": "Choose repositories opens GitHub again"
         }
       ]
     },
