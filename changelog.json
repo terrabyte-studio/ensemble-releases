@@ -1,6 +1,31 @@
 {
   "versions": [
     {
+      "version": "0.2.11-beta.2",
+      "date": "2026-10-22",
+      "beta": true,
+      "changes": [
+        {
+          "id": "codex-newest-models",
+          "kind": "new",
+          "title": "Codex's newest models in the model menu",
+          "body": "GPT-6.1-Sol, GPT-6-Astra and the others Codex offers today, instead of GPT-5.5 alone."
+        },
+        {
+          "id": "codex-usage",
+          "kind": "new",
+          "title": "See how much of your Codex plan is used",
+          "body": "For ChatGPT sign-ins, your computer's own included, beside Claude's in the usage popover and in Settings."
+        },
+        {
+          "id": "usage-percentages",
+          "kind": "improved",
+          "title": "Usage shows percentages, and says when it's out of date",
+          "body": "Each window shows how much is used, and a reading that couldn't be refreshed is dimmed with its age."
+        }
+      ]
+    },
+    {
       "version": "0.2.11-beta.1",
       "date": "2026-10-21",
       "beta": true,
