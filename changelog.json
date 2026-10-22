@@ -1,6 +1,31 @@
 {
   "versions": [
     {
+      "version": "0.2.11-beta.4",
+      "date": "2026-10-22",
+      "beta": true,
+      "changes": [
+        {
+          "id": "steer-while-it-works",
+          "kind": "new",
+          "title": "Steer the agent while it works",
+          "body": "Send now and ⌘↵ give Claude your message at its next step instead of stopping it."
+        },
+        {
+          "id": "ensemble-api",
+          "kind": "new",
+          "title": "An API for programs on your Mac",
+          "body": "Once you allow them, other programs can list and start threads, send messages and follow along, also over MCP; manage them in Settings › Ensemble API."
+        },
+        {
+          "id": "less-memory",
+          "kind": "improved",
+          "title": "Less memory over long sessions",
+          "body": "The app keeps only the chats you have open in full, and no longer grows the longer it runs."
+        }
+      ]
+    },
+    {
       "version": "0.2.11-beta.3",
       "date": "2026-10-22",
       "beta": true,
