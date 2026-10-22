@@ -1,6 +1,31 @@
 {
   "versions": [
     {
+      "version": "0.2.11-beta.3",
+      "date": "2026-10-22",
+      "beta": true,
+      "changes": [
+        {
+          "id": "clearer-chat",
+          "kind": "new",
+          "title": "A clearer chat",
+          "body": "The agent's work folds into one line above its reply, and what it asks of you and what you did each get a line of their own."
+        },
+        {
+          "id": "answer-parts-of-a-reply",
+          "kind": "new",
+          "title": "Answer parts of a reply",
+          "body": "Select what the agent said, write your answer under it, and send your answers together as one message."
+        },
+        {
+          "id": "one-button-message-box",
+          "kind": "improved",
+          "title": "One button in the message box",
+          "body": "The mic while it's empty, send once you type, and Stop or Queue while the agent works."
+        }
+      ]
+    },
+    {
       "version": "0.2.11-beta.2",
       "date": "2026-10-22",
       "beta": true,
