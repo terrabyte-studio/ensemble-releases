@@ -1,6 +1,31 @@
 {
   "versions": [
     {
+      "version": "0.2.11-beta.5",
+      "date": "2026-10-26",
+      "beta": true,
+      "changes": [
+        {
+          "id": "steer-codex",
+          "kind": "new",
+          "title": "Steer Codex while it works",
+          "body": "Codex takes a message at its next step, shows its reply as it writes it, and stops when you press Stop."
+        },
+        {
+          "id": "replies-start-at-once",
+          "kind": "improved",
+          "title": "Replies start right away",
+          "body": "Your agent stays ready between messages, so the next one starts at once instead of after a few seconds, and replies on Ensemble VMs come in smoothly as they're written."
+        },
+        {
+          "id": "settings-page",
+          "kind": "improved",
+          "title": "Settings as a page of their own",
+          "body": "Settings open over the whole window, with room for every section."
+        }
+      ]
+    },
+    {
       "version": "0.2.11-beta.4",
       "date": "2026-10-22",
       "beta": true,
